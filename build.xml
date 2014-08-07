@@ -1,0 +1,30 @@
+<project name="Java Playlist Parser" basedir=".">
+    
+    <property name="src.dir" value="src"/>
+    
+    <property name="build.dir" value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="jar.dir" value="${build.dir}/jar"/>
+    <property name="jar.name" value="jplaylistparser"/>
+
+    <path id="build.classpath">
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="build.classpath" classpath="${lib.dir}/jdom-2.0.5.jar" includeantruntime="false"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${jar.name}.jar" basedir="${classes.dir}">
+            <zipgroupfileset dir="${lib.dir}" includes="**/*.jar"/>
+        </jar>
+    </target>
+
+</project>

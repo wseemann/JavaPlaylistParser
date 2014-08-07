@@ -15,14 +15,14 @@ Donations can be made via PayPal:
 Overview
 --------
 
-Java Playlist Parser is a toolkit for detecting and extracting metadata and structured text content from various documents using existing parser libraries.
+JavaPlaylistParser is a toolkit for detecting and extracting metadata and structured text content from various documents using existing parser libraries.
 
 Using JPP in your application
 ------------
 
 Extract and copy the following JAR file and prebuilt native libraries into your projects "libs" folder:
 
-Compiling
+Installation
 ------------
 
 ### Ant
@@ -35,13 +35,13 @@ build system. To build Java Playlist sParser, use the following command in this 
 Usage
 ------------
 
-Sample code:
+
 
 License
 ------------
 
 ```
-JavaPlaylistParser: A unified interface for playing audio files and streams.
+JavaPlaylistParser: A toolkit for detecting and extracting metadata and structured text content from various documents using existing parser libraries.
 
 Copyright 2014 William Seemann
 
