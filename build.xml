@@ -17,7 +17,7 @@
 
     <target name="compile" depends="clean">
         <mkdir dir="${classes.dir}"/>
-        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="build.classpath" classpath="${lib.dir}/jdom-2.0.5.jar" includeantruntime="false"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="build.classpath" classpath="${lib.dir}/jdom-2.0.6.jar" includeantruntime="false"/>
     </target>
 
     <target name="jar" depends="compile">
